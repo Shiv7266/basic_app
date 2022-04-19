@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "370984719755",
+    "project_id": "tutorial-f1ea5",
+    "storage_bucket": "tutorial-f1ea5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370984719755:android:2e442b615820830d47cb8e",
+        "android_client_info": {
+          "package_name": "com.example.basic_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370984719755-9crgic1dbi3hr5kg174m2lcog2qe7r9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbK6-Hr-d5ZzghEIzfX7IO-AadY3mJ1qs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370984719755-9crgic1dbi3hr5kg174m2lcog2qe7r9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
