@@ -1,4 +1,5 @@
 import 'package:basic_app/Auth/auth_layout.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatefulWidget {
@@ -13,7 +14,14 @@ class _SignUpState extends State<SignUp> {
   Widget build(BuildContext context) {
     return AuthLayout(
       title: 'Signup',
-      onTap: () {},
+      onTap: () async {
+        UserCredential userCredential = await FirebaseAuth.instance
+            .createUserWithEmailAndPassword(
+                email: 'user@mail.com', password: '12345678')
+            .catchError((e) => print(e));
+
+        print(userCredential.user!.uid);
+      },
     );
   }
 }

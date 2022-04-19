@@ -46,23 +46,26 @@ class _AuthLayoutState extends State<AuthLayout> {
               v30,
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 50),
-                child: Container(
-                  decoration: BoxDecoration(
-                      color: Colors.indigo,
-                      borderRadius: BorderRadius.circular(30)),
-                  width: double.infinity,
-                  child: Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Center(
-                        child: Text(
-                      widget.title,
-                      style: TextStyle(color: kcWhite, fontSize: 22),
-                    )),
+                child: InkWell(
+                  onTap: widget.onTap as Function(),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.indigo,
+                        borderRadius: BorderRadius.circular(30)),
+                    width: double.infinity,
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Center(
+                          child: Text(
+                        widget.title,
+                        style: TextStyle(color: kcWhite, fontSize: 22),
+                      )),
+                    ),
                   ),
                 ),
               ),
               TextButton(
-                  onPressed: () => widget.onTap,
+                  onPressed: () {},
                   child: Text('Forgot your password?',
                       style: GoogleFonts.roboto(
                           fontSize: 18,
